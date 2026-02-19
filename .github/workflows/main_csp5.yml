@@ -20,7 +20,7 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '10.x'
+          dotnet-version: '8.x'
 
       - name: Restore dependencies
         run: dotnet restore Lab05/Backend/Backend.csproj
@@ -63,4 +63,5 @@ jobs:
           app-name: 'CSP5'
           slot-name: 'Production'
           package: .
+
 
